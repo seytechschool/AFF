@@ -18,6 +18,9 @@ export default function App() {
           <li>
             <Link to="/about">About</Link>
           </li>
+          <li>
+            My test changes
+          </li>
         </ul>
 
         <hr />
