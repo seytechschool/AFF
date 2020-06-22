@@ -1,0 +1,27 @@
+.box{
+    border: 1px solid black ;
+    width: 200px;
+    height: 100px;
+    display: inline-block;
+    padding: 20px;
+    margin: 20px;
+    background-color: lightgrey;
+}
+
+.container{
+    display: inline-block;
+    
+}
+.container:hover{
+    cursor: pointer;
+}
+.regionName{
+    padding: 5px;
+    padding-left: 20px;
+}
+.regionName:hover{
+    color: royalblue;
+}
+.box:hover{
+    border-color: royalblue;
+}
