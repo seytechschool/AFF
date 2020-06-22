@@ -20,6 +20,7 @@ export default function App() {
           </li>
           <li>
             My test changes on my branch
+            Changed by my teammate
           </li>
         </ul>
 
