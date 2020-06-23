@@ -29,7 +29,7 @@ class App extends React.Component {
     const {countryList, regionList, displayRegion} = this.state;
   return (
     <Router>
-      <p>211321 Kushtar's code added</p>
+      <p>211321 Kushtar's code added++</p>
       <div>
         <ul>
           <li>
