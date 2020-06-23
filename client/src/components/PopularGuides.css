@@ -1,0 +1,12 @@
+.guides{
+    border: 1px solid black ;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    padding: 20px;
+    margin: 20px;
+}
+
+.guides:hover{
+    cursor: pointer;
+}
