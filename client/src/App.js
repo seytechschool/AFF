@@ -2,6 +2,7 @@ import React from "react";
 import Home from './components/Home.js';
 import Regions from './components/Regions'
 import RegionComponent  from './components/RegionComponent';
+import PopularGuide from "./components/PopularGuides"
 import {
   BrowserRouter as Router,
   Switch,
@@ -13,8 +14,8 @@ class App extends React.Component {
   constructor(){
     super();
     this.state = {
-      regionList: [{id: 1, name: 'Central Asia'}, {id: 2, name: 'East    Asia'}, {id: 3, name: 'South Asia'}, {id: 4, name: 'SouthEast Asia'}, {id: 5, name: 'West Asia'}],
-      countryList: [{id: 11, name: 'Kyrgyzstan', region: 'Central Asia'}, {id: 12, name: 'Tajikistan', region: 'Central Asia'}, {id: 13, name: 'Kazakhstan', region: 'Central Asia'}],
+      regionList: [{id: 1, name: 'Central Asia'}, {id: 2, name: 'East Asia'}, {id: 3, name: 'South Asia'}, {id: 4, name: 'SouthEast Asia'}, {id: 5, name: 'West Asia'}],
+      countryList: [{id: 11, name: 'Kyrgyzstan', region: 'Central Asia', isPopularGuide:true}, {id: 12, name: 'Tajikistan', region: 'Central Asia',isPopularGuide:true}, {id: 13, name: 'Kazakhstan', region: 'Central Asia',isPopularGuide:false}],
       displayRegion: ''
     }
   }
@@ -29,6 +30,7 @@ class App extends React.Component {
     const {countryList, regionList, displayRegion} = this.state;
   return (
     <Router>
+      <p>211321 Kushtar's code added++</p>
       <div>
         <ul>
           <li>
@@ -52,6 +54,7 @@ class App extends React.Component {
           </Route>
         </Switch>
       </div>
+      <PopularGuide countryList = {this.state.countryList}/>
     </Router>
   );
   }
