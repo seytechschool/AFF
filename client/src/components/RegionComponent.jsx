@@ -8,18 +8,20 @@ class RegionComponent extends React.Component{
 
     render(){
         const {countryList, displayRegion} = this.props;
-       
+       console.log(countryList, displayRegion)
+       const filteredData = countryList.filter(country => {
+        const {region, name} = country;
+        if (region === displayRegion){
+            console.log('found country', name)
+           return true
+        }
+        })
         return(
             <div>
               <ul>
-              {countryList.filter(country => {
-            const {region, name} = country;
-            if (region === displayRegion){
-                console.log('found country')
-                return <li>{name}</li>
-            }
-            })
-        }
+                    {filteredData.map(country => {
+                        return <li>{country.name}</li>
+                    })}
               </ul>
             </div>
         )
