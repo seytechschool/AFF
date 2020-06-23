@@ -13,7 +13,7 @@ class App extends React.Component {
   constructor(){
     super();
     this.state = {
-      regionList: [{id: 1, name: 'Central Asia'}, {id: 2, name: 'East Asia'}, {id: 3, name: 'South Asia'}, {id: 4, name: 'SouthEast Asia'}, {id: 5, name: 'West Asia'}],
+      regionList: [{id: 1, name: 'Central Asia'}, {id: 2, name: 'East    Asia'}, {id: 3, name: 'South Asia'}, {id: 4, name: 'SouthEast Asia'}, {id: 5, name: 'West Asia'}],
       countryList: [{id: 11, name: 'Kyrgyzstan', region: 'Central Asia'}, {id: 12, name: 'Tajikistan', region: 'Central Asia'}, {id: 13, name: 'Kazakhstan', region: 'Central Asia'}],
       displayRegion: ''
     }
