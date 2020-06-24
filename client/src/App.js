@@ -31,7 +31,7 @@ class App extends React.Component {
   return (
     <Router>
       <p>new changes</p>
-      <h3> heading added (test)</h3>
+      <h3> (test)</h3>
       <div>
         <ul>
           <li>
